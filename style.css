@@ -170,14 +170,16 @@ img { max-width: 100%; display: block; }
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, var(--green-dark) 0%, #1a5c35 60%, #0d3d22 100%);
+  background-image: url('https://images.pexels.com/photos/9893525/pexels-photo-9893525.jpeg?auto=compress&cs=tinysrgb&w=1400&q=80');
+  background-size: cover;
+  background-position: center 30%;
   z-index: 0;
 }
 .hero__bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='1' fill='rgba(255,255,255,0.05)'/%3E%3C/svg%3E");
+  background: linear-gradient(135deg, rgba(45,122,79,0.87) 0%, rgba(26,92,53,0.82) 50%, rgba(13,61,34,0.92) 100%);
 }
 .hero__content {
   position: relative;
@@ -268,11 +270,18 @@ img { max-width: 100%; display: block; }
 }
 .staff-card:hover { transform: translateY(-4px); }
 .staff-card__avatar {
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
+  height: 220px;
+  overflow: hidden;
+}
+.staff-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform .4s ease;
+}
+.staff-card:hover .staff-card__avatar img {
+  transform: scale(1.04);
 }
 .staff-card__info { padding: 24px; }
 .staff-card__role { font-size: .8rem; color: var(--green); font-weight: 700; margin-bottom: 4px; }
@@ -396,14 +405,12 @@ img { max-width: 100%; display: block; }
 .recruit__inner p { color: var(--text-light); margin-bottom: 24px; }
 .recruit__points { list-style: none; margin-bottom: 32px; }
 .recruit__points li { padding: 8px 0; font-size: .9rem; border-bottom: 1px solid var(--border); }
-.recruit__image-placeholder {
-  height: 320px;
-  background: var(--green-light);
+.recruit__image-photo {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
   border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 6rem;
+  box-shadow: var(--shadow);
 }
 
 /* ===== CONTACT ===== */
