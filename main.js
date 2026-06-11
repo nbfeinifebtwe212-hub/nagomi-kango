@@ -116,17 +116,19 @@ function handleSubmit(e) {
 
 // ===== SCROLL ANIMATION =====
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
+  entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
+      const delay = entry.target.dataset.delay || 0;
+      setTimeout(() => entry.target.classList.add('visible'), delay);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.12 });
 
-document.querySelectorAll('.feature-card, .service-item, .staff-card, .flow__step').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(24px)';
-  el.style.transition = 'opacity .5s ease, transform .5s ease';
+const animTargets = document.querySelectorAll(
+  '.feature-card, .service-item, .staff-card, .flow__step, .voice-card, .stat-card'
+);
+animTargets.forEach((el, i) => {
+  el.classList.add('anim');
+  el.dataset.delay = (i % 4) * 100;
   observer.observe(el);
 });

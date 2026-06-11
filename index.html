@@ -6,34 +6,32 @@
   <title>なごみ訪問看護ステーション｜東京都新宿区の訪問看護・リハビリ</title>
   <meta name="description" content="なごみ訪問看護ステーションは、東京都新宿区・渋谷区・中野区・杉並区で訪問看護・リハビリテーションを提供しています。24時間365日対応。介護保険・医療保険適用。" />
   <meta name="keywords" content="訪問看護,リハビリ,新宿区,在宅看護,介護保険,医療保険,ターミナルケア" />
-  <!-- OGP -->
   <meta property="og:title" content="なごみ訪問看護ステーション" />
   <meta property="og:description" content="住み慣れた自宅での療養を支える訪問看護・リハビリテーションサービス。24時間365日対応。東京都新宿区・渋谷区・中野区・杉並区。" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ja_JP" />
   <meta name="twitter:card" content="summary" />
-  <!-- Favicon (SVG inline) -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- ======= HEADER ======= -->
   <header class="header" id="top">
     <div class="header__inner container">
-      <div class="header__logo">
-        <span class="header__logo-icon">🌿</span>
-        <span class="header__logo-text">なごみ訪問看護ステーション</span>
-      </div>
+      <a class="header__logo" href="#top">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#3d9b65"/><path d="M14 6c-1.5 3-5 4.5-5 8a5 5 0 0010 0c0-3.5-3.5-5-5-8z" fill="white"/></svg>
+        <span>なごみ訪問看護ステーション</span>
+      </a>
       <nav class="header__nav" id="globalNav">
         <a href="#services">サービス</a>
         <a href="#staff">スタッフ</a>
+        <a href="#voice">ご利用者の声</a>
         <a href="#faq">よくある質問</a>
-        <a href="#area">対応エリア</a>
         <a href="#recruit">採用情報</a>
-        <a href="#contact" class="btn btn--sm">お問い合わせ</a>
+        <a href="#contact" class="btn btn--sm btn--primary">無料相談</a>
       </nav>
       <button class="header__burger" id="burgerBtn" aria-label="メニュー">
         <span></span><span></span><span></span>
@@ -41,16 +39,78 @@
     </div>
   </header>
 
-  <!-- ======= HERO ======= -->
-  <section class="hero">
-    <div class="hero__bg"></div>
-    <div class="hero__content container">
-      <p class="hero__sub">東京都新宿区・渋谷区・中野区 対応</p>
-      <h1 class="hero__title">あなたの暮らしに、<br>やさしい看護を。</h1>
-      <p class="hero__desc">なごみ訪問看護ステーションは、住み慣れた自宅での療養を支える訪問看護・リハビリテーションサービスを提供しています。利用者さまとご家族に寄り添い、安心できる生活を一緒につくります。</p>
-      <div class="hero__ctas">
-        <a href="#contact" class="btn btn--primary">無料相談・お問い合わせ</a>
-        <a href="#services" class="btn btn--outline">サービスを見る</a>
+  <!-- ======= HERO (split layout) ======= -->
+  <section class="hero" id="hero">
+    <div class="hero__left">
+      <div class="hero__left-inner">
+        <div class="hero__badges">
+          <span class="badge badge--green">東京都新宿区</span>
+          <span class="badge badge--outline">24時間365日対応</span>
+        </div>
+        <h1 class="hero__title">
+          あなたの暮らしに、<br>
+          <em>やさしい看護</em>を。
+        </h1>
+        <p class="hero__desc">
+          住み慣れたご自宅で、安心して療養を続けてほしい。<br>
+          なごみは看護師・療法士がチームで伺い、<br>
+          利用者さまとご家族を丁寧に支えます。
+        </p>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary btn--lg">無料相談・お問い合わせ</a>
+          <a href="#services" class="btn btn--ghost btn--lg">サービスを見る</a>
+        </div>
+        <div class="hero__trust">
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l2 5.5H17l-4.5 3.3 1.7 5.5L9 12l-5.2 3.3 1.7-5.5L1 6.5h6z" fill="#3d9b65"/></svg>
+            <span>介護保険・医療保険 適用</span>
+          </div>
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l2 5.5H17l-4.5 3.3 1.7 5.5L9 12l-5.2 3.3 1.7-5.5L1 6.5h6z" fill="#3d9b65"/></svg>
+            <span>まずは無料でご相談</span>
+          </div>
+          <div class="trust-item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l2 5.5H17l-4.5 3.3 1.7 5.5L9 12l-5.2 3.3 1.7-5.5L1 6.5h6z" fill="#3d9b65"/></svg>
+            <span>主治医・ケアマネと連携</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__right">
+      <img
+        src="https://images.pexels.com/photos/7345456/pexels-photo-7345456.jpeg?auto=compress&cs=tinysrgb&w=900&h=1000&fit=crop"
+        alt="看護師が笑顔の高齢者の血圧を測定している様子"
+        loading="eager"
+      />
+      <div class="hero__right-badge">
+        <div class="hero__stat-pill">
+          <strong>2,000件+</strong>
+          <span>訪問実績</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= STATS ======= -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat-card">
+          <p class="stat-card__num">10<span>年</span></p>
+          <p class="stat-card__label">創業からの実績</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-card__num">2,000<span>件+</span></p>
+          <p class="stat-card__label">累計訪問件数</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-card__num">15<span>名</span></p>
+          <p class="stat-card__label">専門スタッフ数</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-card__num">24<span>時間</span></p>
+          <p class="stat-card__label">365日緊急対応</p>
+        </div>
       </div>
     </div>
   </section>
@@ -58,62 +118,94 @@
   <!-- ======= FEATURES ======= -->
   <section class="features section">
     <div class="container">
-      <h2 class="section__title">なごみが選ばれる3つの理由</h2>
+      <p class="section__eyebrow">選ばれる理由</p>
+      <h2 class="section__title">なごみが選ばれる<br>3つの理由</h2>
       <div class="features__grid">
         <div class="feature-card">
-          <div class="feature-card__icon">🕐</div>
-          <h3>24時間365日 対応</h3>
-          <p>急な体調変化にも、夜間・休日問わず看護師がすぐ駆けつけます。ご家族の不安もしっかり受け止めます。</p>
+          <div class="feature-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#3d9b65" stroke-width="2"/><path d="M16 9v7l4 4" stroke="#3d9b65" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>24時間365日<br>緊急対応</h3>
+          <p>夜間・休日を問わず、急な体調変化にもすぐ駆けつけます。深夜でも電話1本でナースが対応します。</p>
+        </div>
+        <div class="feature-card feature-card--accent">
+          <div class="feature-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4C9.37 4 4 9.37 4 16s5.37 12 12 12 12-5.37 12-12S22.63 4 16 4z" stroke="white" stroke-width="2"/><path d="M16 10v6l3 3" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>多職種チームで<br>ワンストップ支援</h3>
+          <p>看護師・PT・OT・STが連携。医療からリハビリ・生活支援まで、一つのチームがご自宅で対応します。</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">👩‍⚕️</div>
-          <h3>経験豊富な専門スタッフ</h3>
-          <p>看護師・理学療法士・作業療法士・言語聴覚士が連携。医療・リハビリ・生活支援をワンチームで提供します。</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon">🏥</div>
-          <h3>主治医・ケアマネと密な連携</h3>
-          <p>かかりつけ医・ケアマネジャーとの情報共有を徹底し、安全で継続的なケアを実現します。</p>
+          <div class="feature-card__icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 16c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#3d9b65" stroke-width="2"/><path d="M12 20c0 2.2 1.8 4 4 4s4-1.8 4-4" stroke="#3d9b65" stroke-width="2"/><path d="M16 8V4M8 16H4M28 16h-4" stroke="#3d9b65" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>主治医・ケアマネと<br>密な情報共有</h3>
+          <p>かかりつけ医・ケアマネジャーとリアルタイムで連携。安全で切れ目のないケアを実現します。</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ======= SERVICES ======= -->
-  <section class="services section section--gray" id="services">
+  <section class="services section section--soft" id="services">
     <div class="container">
-      <h2 class="section__title">サービス内容</h2>
-      <p class="section__lead">医師の指示のもと、看護師や療法士がご自宅へ訪問します。保険適用で利用いただけます。</p>
+      <p class="section__eyebrow">サービス内容</p>
+      <h2 class="section__title">提供サービス</h2>
+      <p class="section__lead">医師の指示のもと、看護師や療法士がご自宅へ訪問します。</p>
       <div class="services__grid">
         <div class="service-item">
-          <div class="service-item__num">01</div>
-          <h3>訪問看護</h3>
-          <p>バイタルチェック、創傷処置、点滴管理、服薬管理、医療機器の管理など、医療的ケアをご自宅で行います。</p>
+          <div class="service-item__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3a11 11 0 100 22A11 11 0 0014 3z" stroke="#3d9b65" stroke-width="1.8"/><path d="M14 8v6l4 2" stroke="#3d9b65" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>訪問看護</h3>
+            <p>バイタルチェック・創傷処置・点滴管理・服薬管理など、医療的ケアをご自宅で行います。</p>
+          </div>
         </div>
         <div class="service-item">
-          <div class="service-item__num">02</div>
-          <h3>リハビリテーション</h3>
-          <p>理学療法士・作業療法士・言語聴覚士が訪問。歩行訓練・日常生活動作の回復・嚥下訓練を行います。</p>
+          <div class="service-item__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M8 20l4-8 4 6 2-4 3 6" stroke="#3d9b65" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h3>リハビリテーション</h3>
+            <p>PT・OT・STが訪問。歩行訓練・日常生活動作の回復・嚥下訓練を行います。</p>
+          </div>
         </div>
         <div class="service-item">
-          <div class="service-item__num">03</div>
-          <h3>ターミナルケア</h3>
-          <p>人生の最期を住み慣れた場所で過ごしたい方を支えます。本人・ご家族の意思を大切にした看護を行います。</p>
+          <div class="service-item__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 5v18M5 14h18" stroke="#3d9b65" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>ターミナルケア</h3>
+            <p>人生の最期を自宅で過ごしたい方を支えます。本人・ご家族の意思を大切にします。</p>
+          </div>
         </div>
         <div class="service-item">
-          <div class="service-item__num">04</div>
-          <h3>精神科訪問看護</h3>
-          <p>精神疾患をお持ちの方の地域生活を支援します。服薬管理・生活リズムの調整・家族支援も対応します。</p>
+          <div class="service-item__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="4" stroke="#3d9b65" stroke-width="1.8"/><path d="M6 24c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#3d9b65" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>精神科訪問看護</h3>
+            <p>精神疾患をお持ちの方の地域生活を支援。服薬管理・生活リズム・家族支援も対応。</p>
+          </div>
         </div>
         <div class="service-item">
-          <div class="service-item__num">05</div>
-          <h3>小児訪問看護</h3>
-          <p>医療的ケア児のご家庭への支援。保育園・学校との連携も行い、お子さまとご家族の生活を応援します。</p>
+          <div class="service-item__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="9" r="3" stroke="#3d9b65" stroke-width="1.8"/><path d="M8 22c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#3d9b65" stroke-width="1.8" stroke-linecap="round"/><path d="M19 12c1.7 0 3 1.3 3 3s-1.3 3-3 3" stroke="#3d9b65" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>小児訪問看護</h3>
+            <p>医療的ケア児のご家庭への支援。保育園・学校との連携も行います。</p>
+          </div>
         </div>
         <div class="service-item">
-          <div class="service-item__num">06</div>
-          <h3>相談・コーディネート</h3>
-          <p>介護保険・医療保険の手続きから、他のサービス（訪問介護・デイサービス等）との調整まで、総合的に支援します。</p>
+          <div class="service-item__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 8h20v14a2 2 0 01-2 2H6a2 2 0 01-2-2V8z" stroke="#3d9b65" stroke-width="1.8"/><path d="M9 8V6a5 5 0 0110 0v2" stroke="#3d9b65" stroke-width="1.8"/></svg>
+          </div>
+          <div>
+            <h3>相談・コーディネート</h3>
+            <p>介護保険・医療保険の手続きから、他サービスとの調整まで総合的に支援します。</p>
+          </div>
         </div>
       </div>
     </div>
@@ -122,37 +214,95 @@
   <!-- ======= STAFF ======= -->
   <section class="staff section" id="staff">
     <div class="container">
-      <h2 class="section__title">スタッフ紹介</h2>
-      <p class="section__lead">経験豊富な看護師・療法士がチームで支えます。</p>
+      <p class="section__eyebrow">スタッフ紹介</p>
+      <h2 class="section__title">チームで支える<br>専門スタッフ</h2>
       <div class="staff__grid">
         <div class="staff-card">
-          <div class="staff-card__avatar">
-            <img src="https://images.pexels.com/photos/4270366/pexels-photo-4270366.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="田中あかり" loading="lazy" />
+          <div class="staff-card__photo">
+            <img
+              src="https://images.pexels.com/photos/4269699/pexels-photo-4269699.jpeg?auto=compress&cs=tinysrgb&w=480&h=520&fit=crop&crop=faces,top"
+              alt="田中あかり"
+              loading="lazy"
+            />
           </div>
-          <div class="staff-card__info">
+          <div class="staff-card__body">
             <p class="staff-card__role">管理者・看護師長</p>
             <h3 class="staff-card__name">田中 あかり</h3>
-            <p class="staff-card__desc">総合病院・在宅医療クリニックで15年の経験を持つ。「利用者さんの笑顔が一番の原動力」がモットー。</p>
+            <p class="staff-card__career">看護師歴 15年</p>
+            <p class="staff-card__desc">「利用者さんの笑顔が一番の原動力」がモットー。総合病院・在宅医療クリニックでの経験を活かし、チームを支えています。</p>
           </div>
         </div>
         <div class="staff-card">
-          <div class="staff-card__avatar">
-            <img src="https://images.pexels.com/photos/5888158/pexels-photo-5888158.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="山本健太" loading="lazy" />
+          <div class="staff-card__photo">
+            <img
+              src="https://images.pexels.com/photos/15962798/pexels-photo-15962798.jpeg?auto=compress&cs=tinysrgb&w=480&h=520&fit=crop&crop=faces,top"
+              alt="山本健太"
+              loading="lazy"
+            />
           </div>
-          <div class="staff-card__info">
+          <div class="staff-card__body">
             <p class="staff-card__role">理学療法士</p>
             <h3 class="staff-card__name">山本 健太</h3>
-            <p class="staff-card__desc">整形外科病院でのリハビリ経験10年。「また歩けるようになった」という声を目標に日々取り組んでいます。</p>
+            <p class="staff-card__career">PT歴 10年</p>
+            <p class="staff-card__desc">「また歩けるようになった」という声を目標に日々取り組んでいます。整形外科病院での豊富なリハビリ経験を持ちます。</p>
           </div>
         </div>
         <div class="staff-card">
-          <div class="staff-card__avatar">
-            <img src="https://images.pexels.com/photos/32115898/pexels-photo-32115898.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="佐々木由美" loading="lazy" />
+          <div class="staff-card__photo">
+            <img
+              src="https://images.pexels.com/photos/6129196/pexels-photo-6129196.jpeg?auto=compress&cs=tinysrgb&w=480&h=520&fit=crop&crop=faces,top"
+              alt="佐々木由美"
+              loading="lazy"
+            />
           </div>
-          <div class="staff-card__info">
+          <div class="staff-card__body">
             <p class="staff-card__role">訪問看護師</p>
             <h3 class="staff-card__name">佐々木 由美</h3>
-            <p class="staff-card__desc">小児科・精神科ナースとして8年勤務後、訪問看護へ。子どもから高齢者まで幅広く対応します。</p>
+            <p class="staff-card__career">看護師歴 8年</p>
+            <p class="staff-card__desc">小児科・精神科ナースを経て訪問看護へ。子どもから高齢者まで幅広く対応します。明るい笑顔で利用者さまに寄り添います。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= VOICE (testimonials) ======= -->
+  <section class="voice section section--soft" id="voice">
+    <div class="container">
+      <p class="section__eyebrow">ご利用者の声</p>
+      <h2 class="section__title">お客様からの<br>うれしいお言葉</h2>
+      <div class="voice__grid">
+        <div class="voice-card">
+          <div class="voice-card__stars">★★★★★</div>
+          <p class="voice-card__text">「退院後、自宅での生活が不安でしたが、なごみさんのスタッフが毎回明るく来てくれるので、今では外出する気力も戻ってきました。本当に感謝しています。」</p>
+          <div class="voice-card__author">
+            <div class="voice-card__avatar">M</div>
+            <div>
+              <p class="voice-card__name">70代 女性（新宿区）</p>
+              <p class="voice-card__rel">ご本人より</p>
+            </div>
+          </div>
+        </div>
+        <div class="voice-card voice-card--featured">
+          <div class="voice-card__stars">★★★★★</div>
+          <p class="voice-card__text">「遠方に住んでいる私の代わりに、父の体調管理をしていただいています。毎週報告書が届くので安心感が全然違います。夜間の電話にも丁寧に対応してもらえて感激しました。」</p>
+          <div class="voice-card__author">
+            <div class="voice-card__avatar">K</div>
+            <div>
+              <p class="voice-card__name">50代 男性（ご家族）</p>
+              <p class="voice-card__rel">ご家族よりご利用中</p>
+            </div>
+          </div>
+        </div>
+        <div class="voice-card">
+          <div class="voice-card__stars">★★★★★</div>
+          <p class="voice-card__text">「ケアマネさんに紹介していただきました。リハビリの先生がとてもわかりやすく説明してくれて、妻も楽しみに待っています。対応エリアも広くて助かっています。」</p>
+          <div class="voice-card__author">
+            <div class="voice-card__avatar">T</div>
+            <div>
+              <p class="voice-card__name">80代 男性（中野区）</p>
+              <p class="voice-card__rel">ケアマネ紹介でご利用中</p>
+            </div>
           </div>
         </div>
       </div>
@@ -160,50 +310,47 @@
   </section>
 
   <!-- ======= FLOW ======= -->
-  <section class="flow section section--gray">
+  <section class="flow section">
     <div class="container">
-      <h2 class="section__title">ご利用の流れ</h2>
-      <div class="flow__steps">
+      <p class="section__eyebrow">ご利用の流れ</p>
+      <h2 class="section__title">4ステップで<br>スタートできます</h2>
+      <div class="flow__row">
         <div class="flow__step">
-          <div class="flow__step-num">1</div>
-          <div class="flow__step-body">
-            <h3>お問い合わせ・ご相談</h3>
-            <p>電話・メール・下記フォームからお気軽にご連絡ください。無料でご相談いただけます。</p>
-          </div>
+          <div class="flow__step-num">01</div>
+          <h3>お問い合わせ</h3>
+          <p>電話・メール・フォームからご連絡ください。無料でご相談いただけます。</p>
         </div>
-        <div class="flow__arrow">▼</div>
+        <div class="flow__connector"></div>
         <div class="flow__step">
-          <div class="flow__step-num">2</div>
-          <div class="flow__step-body">
-            <h3>アセスメント訪問</h3>
-            <p>看護師がご自宅を訪問し、状況を確認します。保険の確認や手続きもサポートします。</p>
-          </div>
+          <div class="flow__step-num">02</div>
+          <h3>アセスメント訪問</h3>
+          <p>看護師がご自宅を訪問し、状況確認・保険手続きをサポートします。</p>
         </div>
-        <div class="flow__arrow">▼</div>
+        <div class="flow__connector"></div>
         <div class="flow__step">
-          <div class="flow__step-num">3</div>
-          <div class="flow__step-body">
-            <h3>ケアプランの作成</h3>
-            <p>主治医・ケアマネジャーと連携し、個別のケアプランを作成します。</p>
-          </div>
+          <div class="flow__step-num">03</div>
+          <h3>ケアプラン作成</h3>
+          <p>主治医・ケアマネジャーと連携し、個別のケアプランを作成します。</p>
         </div>
-        <div class="flow__arrow">▼</div>
+        <div class="flow__connector"></div>
         <div class="flow__step">
-          <div class="flow__step-num">4</div>
-          <div class="flow__step-body">
-            <h3>訪問看護スタート</h3>
-            <p>週1〜複数回、ご希望の時間帯に訪問します。状態に合わせて柔軟に対応します。</p>
-          </div>
+          <div class="flow__step-num">04</div>
+          <h3>訪問スタート</h3>
+          <p>週1〜複数回、ご希望の時間帯に訪問します。柔軟に対応します。</p>
         </div>
+      </div>
+      <div class="flow__cta">
+        <a href="#contact" class="btn btn--primary btn--lg">まず相談してみる（無料）</a>
       </div>
     </div>
   </section>
 
-  <!-- ======= FAQ + CHATBOT ======= -->
-  <section class="faq section" id="faq">
+  <!-- ======= FAQ ======= -->
+  <section class="faq section section--soft" id="faq">
     <div class="container">
-      <h2 class="section__title">よくある質問</h2>
-      <p class="section__lead">チャットボットにも同じ質問を聞けます。右下のボタンをタップしてください。</p>
+      <p class="section__eyebrow">よくある質問</p>
+      <h2 class="section__title">お問い合わせ前に<br>ご確認ください</h2>
+      <p class="section__lead">右下のチャットボットでも同じ質問にお答えできます。</p>
       <div class="faq__list">
         <details class="faq__item">
           <summary>訪問看護は介護保険・医療保険のどちらで使えますか？</summary>
@@ -215,7 +362,7 @@
         </details>
         <details class="faq__item">
           <summary>どのくらいの頻度で来てもらえますか？</summary>
-          <p>介護保険の場合は原則週3回まで（ただし状態によって例外あり）、医療保険の場合は週3回まで（特定の疾患は毎日可能）です。主治医の指示書に基づいて決定します。</p>
+          <p>介護保険の場合は原則週3回まで（状態によって例外あり）、医療保険の場合は週3回まで（特定の疾患は毎日可能）です。主治医の指示書に基づいて決定します。</p>
         </details>
         <details class="faq__item">
           <summary>夜間や休日も対応していますか？</summary>
@@ -223,7 +370,7 @@
         </details>
         <details class="faq__item">
           <summary>主治医がいなくても利用できますか？</summary>
-          <p>訪問看護を利用するためには主治医の指示書が必要です。かかりつけ医がいない場合は、地域の医療機関をご紹介することもできますのでご相談ください。</p>
+          <p>訪問看護の利用には主治医の指示書が必要です。かかりつけ医がいない場合は、地域の医療機関をご紹介することもできますのでご相談ください。</p>
         </details>
         <details class="faq__item">
           <summary>対応エリアを教えてください。</summary>
@@ -234,24 +381,25 @@
   </section>
 
   <!-- ======= AREA ======= -->
-  <section class="area section section--gray" id="area">
+  <section class="area section" id="area">
     <div class="container">
+      <p class="section__eyebrow">対応エリア</p>
       <h2 class="section__title">対応エリア</h2>
       <div class="area__content">
-        <div class="area__map">
+        <div class="area__map-wrap">
           <div class="area__map-placeholder">
-            <span>📍</span>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M24 4C16.3 4 10 10.3 10 18c0 10.5 14 26 14 26S38 28.5 38 18c0-7.7-6.3-14-14-14z" fill="#3d9b65"/><circle cx="24" cy="18" r="5" fill="white"/></svg>
             <p>東京都新宿区周辺</p>
           </div>
         </div>
         <div class="area__info">
           <h3>主な対応エリア</h3>
           <ul class="area__list">
-            <li>✅ 新宿区（全域）</li>
-            <li>✅ 渋谷区（全域）</li>
-            <li>✅ 中野区（全域）</li>
-            <li>✅ 杉並区（全域）</li>
-            <li>🔶 豊島区・文京区・港区（応相談）</li>
+            <li><span class="area__check">✓</span> 新宿区（全域）</li>
+            <li><span class="area__check">✓</span> 渋谷区（全域）</li>
+            <li><span class="area__check">✓</span> 中野区（全域）</li>
+            <li><span class="area__check">✓</span> 杉並区（全域）</li>
+            <li><span class="area__sub">△</span> 豊島区・文京区・港区（応相談）</li>
           </ul>
           <p class="area__note">上記エリア外でもお気軽にご相談ください。できる限り対応いたします。</p>
           <a href="#contact" class="btn btn--primary">エリア確認・お問い合わせ</a>
@@ -261,49 +409,59 @@
   </section>
 
   <!-- ======= RECRUIT ======= -->
-  <section class="recruit section" id="recruit">
+  <section class="recruit section section--soft" id="recruit">
     <div class="container">
       <div class="recruit__inner">
+        <div class="recruit__image">
+          <img
+            src="https://images.pexels.com/photos/5318119/pexels-photo-5318119.jpeg?auto=compress&cs=tinysrgb&w=640&h=500&fit=crop"
+            alt="なごみのスタッフ"
+            loading="lazy"
+          />
+        </div>
         <div class="recruit__text">
-          <p class="recruit__label">採用情報</p>
-          <h2>一緒に働きませんか？</h2>
-          <p>なごみ訪問看護ステーションでは、看護師・理学療法士・作業療法士・言語聴覚士を募集しています。チームワークを大切にし、働きやすい環境づくりに取り組んでいます。</p>
+          <p class="section__eyebrow">採用情報</p>
+          <h2>一緒に働き<br>ませんか？</h2>
+          <p>看護師・理学療法士・作業療法士・言語聴覚士を募集しています。チームワークを大切にし、働きやすい環境づくりに取り組んでいます。</p>
           <ul class="recruit__points">
-            <li>📅 週3日〜勤務OK・シフト相談可</li>
-            <li>🚗 車通勤・バイク通勤OK（交通費支給）</li>
-            <li>📚 研修制度・スキルアップ支援あり</li>
-            <li>👶 育児休業・時短勤務実績あり</li>
+            <li>週3日〜勤務OK・シフト相談可</li>
+            <li>車通勤・バイク通勤OK（交通費全額支給）</li>
+            <li>研修制度・スキルアップ支援あり</li>
+            <li>育児休業・時短勤務の実績あり</li>
           </ul>
           <a href="#contact" class="btn btn--primary">採用について問い合わせる</a>
-        </div>
-        <div class="recruit__image">
-          <img src="https://images.pexels.com/photos/5318119/pexels-photo-5318119.jpeg?auto=compress&cs=tinysrgb&w=600&h=480&fit=crop" alt="スタッフ採用" loading="lazy" class="recruit__image-photo" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- ======= CONTACT ======= -->
-  <section class="contact section section--green" id="contact">
+  <section class="contact section" id="contact">
     <div class="container">
-      <h2 class="section__title section__title--white">お問い合わせ</h2>
-      <p class="section__lead section__lead--white">ご相談・ご質問はお気軽にどうぞ。無料でお答えします。</p>
+      <p class="section__eyebrow section__eyebrow--white">お問い合わせ</p>
+      <h2 class="section__title section__title--white">まずはお気軽に<br>ご相談ください</h2>
+      <p class="section__lead section__lead--white">無料でご相談いただけます。お電話・フォームからどうぞ。</p>
       <div class="contact__inner">
         <div class="contact__info">
           <div class="contact__tel">
-            <p class="contact__tel-label">電話番号</p>
+            <p class="contact__tel-label">お電話でのご相談</p>
             <p class="contact__tel-num">03-XXXX-XXXX</p>
-            <p class="contact__tel-hours">受付 9:00〜18:00（緊急時24時間）</p>
+            <p class="contact__tel-hours">受付時間 9:00〜18:00<br><small>（緊急時は24時間対応）</small></p>
+          </div>
+          <div class="contact__note">
+            <p>ケアマネジャーさまからのご紹介もお待ちしております。</p>
           </div>
         </div>
         <form class="contact__form" onsubmit="handleSubmit(event)">
-          <div class="form__group">
-            <label for="name">お名前 <span class="required">必須</span></label>
-            <input type="text" id="name" placeholder="山田 太郎" required />
-          </div>
-          <div class="form__group">
-            <label for="email">メールアドレス <span class="required">必須</span></label>
-            <input type="email" id="email" placeholder="example@email.com" required />
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">お名前 <span class="required">必須</span></label>
+              <input type="text" id="name" placeholder="山田 太郎" required />
+            </div>
+            <div class="form__group">
+              <label for="email">メールアドレス <span class="required">必須</span></label>
+              <input type="email" id="email" placeholder="example@email.com" required />
+            </div>
           </div>
           <div class="form__group">
             <label for="category">お問い合わせ種別</label>
@@ -330,20 +488,23 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="header__logo-icon">🌿</span>
-        <span>なごみ訪問看護ステーション</span>
-        <p>〒160-0000 東京都新宿区〇〇 X-X-X<br>TEL: 03-XXXX-XXXX</p>
+        <div class="footer__logo">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#3d9b65"/><path d="M14 6c-1.5 3-5 4.5-5 8a5 5 0 0010 0c0-3.5-3.5-5-5-8z" fill="white"/></svg>
+          <span>なごみ訪問看護ステーション</span>
+        </div>
+        <p>〒160-0000 東京都新宿区〇〇 X-X-X<br>TEL: 03-XXXX-XXXX　受付 9:00〜18:00</p>
       </div>
       <nav class="footer__nav">
         <a href="#services">サービス</a>
         <a href="#staff">スタッフ</a>
+        <a href="#voice">ご利用者の声</a>
         <a href="#faq">よくある質問</a>
         <a href="#area">対応エリア</a>
         <a href="#recruit">採用情報</a>
         <a href="#contact">お問い合わせ</a>
       </nav>
     </div>
-    <p class="footer__copy">© 2025 なごみ訪問看護ステーション（※これはデモサイトです）</p>
+    <p class="footer__copy">© 2025 なごみ訪問看護ステーション　<span>※このサイトはポートフォリオ用デモサイトです</span></p>
   </footer>
 
   <!-- ======= CHATBOT ======= -->
@@ -351,15 +512,17 @@
     <div class="chatbot__bubble" id="chatbotBubble">
       <button class="chatbot__close" id="chatbotClose">×</button>
       <div class="chatbot__header">
-        <span>🌿</span>
+        <div class="chatbot__header-icon">
+          <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="rgba(255,255,255,0.2)"/><path d="M14 6c-1.5 3-5 4.5-5 8a5 5 0 0010 0c0-3.5-3.5-5-5-8z" fill="white"/></svg>
+        </div>
         <div>
           <p class="chatbot__header-name">なごみ相談ボット</p>
-          <p class="chatbot__header-status">● オンライン</p>
+          <p class="chatbot__header-status"><span class="dot"></span>オンライン</p>
         </div>
       </div>
       <div class="chatbot__messages" id="chatMessages">
         <div class="chat-msg chat-msg--bot">
-          <p>こんにちは！なごみ訪問看護ステーションです😊<br>ご質問をどうぞ。下のボタンからも選べます。</p>
+          <p>こんにちは！なごみ訪問看護ステーションです。<br>ご質問があればお気軽にどうぞ。</p>
         </div>
         <div class="chat-quickreplies" id="quickReplies">
           <button onclick="askQuestion('サービス内容を教えて')">サービス内容</button>
@@ -372,12 +535,14 @@
       </div>
       <div class="chatbot__input-area">
         <input type="text" id="chatInput" placeholder="メッセージを入力..." onkeypress="handleChatKey(event)" />
-        <button onclick="sendChat()" class="chatbot__send">送信</button>
+        <button onclick="sendChat()" class="chatbot__send" aria-label="送信">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M16 9L2 2l3 7-3 7 14-7z" fill="white"/></svg>
+        </button>
       </div>
     </div>
-    <button class="chatbot__toggle" id="chatbotToggle" aria-label="チャット">
-      <span class="chatbot__toggle-icon">💬</span>
-      <span class="chatbot__toggle-label">相談する</span>
+    <button class="chatbot__toggle" id="chatbotToggle" aria-label="チャット相談">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z" fill="white"/></svg>
+      <span>相談する</span>
     </button>
   </div>
 
