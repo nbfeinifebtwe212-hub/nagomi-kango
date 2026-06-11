@@ -39,13 +39,32 @@
     </div>
   </header>
 
-  <!-- ======= HERO (split layout) ======= -->
+  <!-- ======= HERO (diagonal split) ======= -->
   <section class="hero" id="hero">
-    <div class="hero__left">
+    <!-- 斜め分割 写真エリア -->
+    <div class="hero__photos">
+      <div class="hero__photo-a">
+        <img
+          src="https://images.pexels.com/photos/7345461/pexels-photo-7345461.jpeg?auto=compress&cs=tinysrgb&w=800&h=900&fit=crop&crop=faces,top"
+          alt="笑顔で患者を診る看護師"
+          loading="eager"
+        />
+      </div>
+      <div class="hero__photo-b">
+        <img
+          src="https://images.pexels.com/photos/18271866/pexels-photo-18271866.jpeg?auto=compress&cs=tinysrgb&w=800&h=900&fit=crop&crop=faces,top"
+          alt="高齢患者に寄り添う看護師"
+          loading="eager"
+        />
+      </div>
+    </div>
+    <!-- テキストオーバーレイ -->
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
       <div class="hero__left-inner">
         <div class="hero__badges">
-          <span class="badge badge--green">東京都新宿区</span>
-          <span class="badge badge--outline">24時間365日対応</span>
+          <span class="badge badge--white">東京都新宿区</span>
+          <span class="badge badge--white-outline">24時間365日対応</span>
         </div>
         <h1 class="hero__title">
           あなたの暮らしに、<br>
@@ -58,35 +77,26 @@
         </p>
         <div class="hero__ctas">
           <a href="#contact" class="btn btn--primary btn--lg">無料相談・お問い合わせ</a>
-          <a href="#services" class="btn btn--ghost btn--lg">サービスを見る</a>
+          <a href="#services" class="btn btn--white-ghost btn--lg">サービスを見る</a>
         </div>
         <div class="hero__trust">
-          <div class="trust-item">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l2 5.5H17l-4.5 3.3 1.7 5.5L9 12l-5.2 3.3 1.7-5.5L1 6.5h6z" fill="#3d9b65"/></svg>
+          <div class="trust-item trust-item--white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 4.9H15l-4 2.9 1.5 4.9L8 11 3.5 13.7 5 8.8 1 5.9h5.2z" fill="white"/></svg>
             <span>介護保険・医療保険 適用</span>
           </div>
-          <div class="trust-item">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l2 5.5H17l-4.5 3.3 1.7 5.5L9 12l-5.2 3.3 1.7-5.5L1 6.5h6z" fill="#3d9b65"/></svg>
+          <div class="trust-item trust-item--white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 4.9H15l-4 2.9 1.5 4.9L8 11 3.5 13.7 5 8.8 1 5.9h5.2z" fill="white"/></svg>
             <span>まずは無料でご相談</span>
           </div>
-          <div class="trust-item">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l2 5.5H17l-4.5 3.3 1.7 5.5L9 12l-5.2 3.3 1.7-5.5L1 6.5h6z" fill="#3d9b65"/></svg>
+          <div class="trust-item trust-item--white">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 4.9H15l-4 2.9 1.5 4.9L8 11 3.5 13.7 5 8.8 1 5.9h5.2z" fill="white"/></svg>
             <span>主治医・ケアマネと連携</span>
           </div>
         </div>
       </div>
-    </div>
-    <div class="hero__right">
-      <img
-        src="https://images.pexels.com/photos/7345456/pexels-photo-7345456.jpeg?auto=compress&cs=tinysrgb&w=900&h=1000&fit=crop"
-        alt="看護師が笑顔の高齢者の血圧を測定している様子"
-        loading="eager"
-      />
-      <div class="hero__right-badge">
-        <div class="hero__stat-pill">
-          <strong>2,000件+</strong>
-          <span>訪問実績</span>
-        </div>
+      <div class="hero__stat-pill">
+        <strong>2,000件+</strong>
+        <span>累計訪問実績</span>
       </div>
     </div>
   </section>
@@ -115,32 +125,41 @@
     </div>
   </section>
 
-  <!-- ======= FEATURES ======= -->
-  <section class="features section">
+  <!-- ======= FEATURES (photo + blue overlay) ======= -->
+  <section class="features section--features">
     <div class="container">
       <p class="section__eyebrow">選ばれる理由</p>
       <h2 class="section__title">なごみが選ばれる<br>3つの理由</h2>
       <div class="features__grid">
         <div class="feature-card">
-          <div class="feature-card__icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#3d9b65" stroke-width="2"/><path d="M16 9v7l4 4" stroke="#3d9b65" stroke-width="2" stroke-linecap="round"/></svg>
+          <div class="feature-card__bg" style="background-image:url('https://images.pexels.com/photos/6129502/pexels-photo-6129502.jpeg?auto=compress&cs=tinysrgb&w=700&q=80')"></div>
+          <div class="feature-card__content">
+            <div class="feature-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="13" stroke="white" stroke-width="2"/><path d="M16 9v7l4 4" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>24時間365日<br>緊急対応</h3>
+            <p>夜間・休日を問わず、急な体調変化にもすぐ駆けつけます。深夜でも電話1本でナースが対応します。</p>
           </div>
-          <h3>24時間365日<br>緊急対応</h3>
-          <p>夜間・休日を問わず、急な体調変化にもすぐ駆けつけます。深夜でも電話1本でナースが対応します。</p>
         </div>
-        <div class="feature-card feature-card--accent">
-          <div class="feature-card__icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4C9.37 4 4 9.37 4 16s5.37 12 12 12 12-5.37 12-12S22.63 4 16 4z" stroke="white" stroke-width="2"/><path d="M16 10v6l3 3" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="feature-card feature-card--bright">
+          <div class="feature-card__bg" style="background-image:url('https://images.pexels.com/photos/6129499/pexels-photo-6129499.jpeg?auto=compress&cs=tinysrgb&w=700&q=80')"></div>
+          <div class="feature-card__content">
+            <div class="feature-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="10" cy="12" r="4" stroke="white" stroke-width="2"/><circle cx="22" cy="12" r="4" stroke="white" stroke-width="2"/><path d="M4 26c0-3.3 2.7-6 6-6h12c3.3 0 6 2.7 6 6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>多職種チームで<br>ワンストップ支援</h3>
+            <p>看護師・PT・OT・STが連携。医療からリハビリ・生活支援まで、一つのチームがご自宅で対応します。</p>
           </div>
-          <h3>多職種チームで<br>ワンストップ支援</h3>
-          <p>看護師・PT・OT・STが連携。医療からリハビリ・生活支援まで、一つのチームがご自宅で対応します。</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 16c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#3d9b65" stroke-width="2"/><path d="M12 20c0 2.2 1.8 4 4 4s4-1.8 4-4" stroke="#3d9b65" stroke-width="2"/><path d="M16 8V4M8 16H4M28 16h-4" stroke="#3d9b65" stroke-width="2" stroke-linecap="round"/></svg>
+          <div class="feature-card__bg" style="background-image:url('https://images.pexels.com/photos/7345459/pexels-photo-7345459.jpeg?auto=compress&cs=tinysrgb&w=700&q=80')"></div>
+          <div class="feature-card__content">
+            <div class="feature-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M10 16h12M16 10v12" stroke="white" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="16" r="13" stroke="white" stroke-width="2"/></svg>
+            </div>
+            <h3>主治医・ケアマネと<br>密な情報共有</h3>
+            <p>かかりつけ医・ケアマネジャーとリアルタイムで連携。安全で切れ目のないケアを実現します。</p>
           </div>
-          <h3>主治医・ケアマネと<br>密な情報共有</h3>
-          <p>かかりつけ医・ケアマネジャーとリアルタイムで連携。安全で切れ目のないケアを実現します。</p>
         </div>
       </div>
     </div>
@@ -262,6 +281,24 @@
             <p class="staff-card__desc">小児科・精神科ナースを経て訪問看護へ。子どもから高齢者まで幅広く対応します。明るい笑顔で利用者さまに寄り添います。</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= VIDEO ======= -->
+  <section class="video-section section--video">
+    <div class="container">
+      <p class="section__eyebrow section__eyebrow--white">動画で見る</p>
+      <h2 class="section__title section__title--white">訪問看護師の仕事を<br>動画でご覧ください</h2>
+      <p class="section__lead section__lead--white">実際の訪問看護の現場をご紹介します。ご利用を検討中の方はぜひご覧ください。</p>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/Gj4n16Bv5Ks?rel=0&modestbranding=1"
+          title="望む暮らしに寄り添う訪問看護"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
       </div>
     </div>
   </section>
